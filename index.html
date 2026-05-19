@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi Lengkap Pidato | Flashcard & Cepat Hafal</title>
+  <!-- Google Fonts untuk tampilan premium -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8edf5 40%, #ffffff 100%);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(20px);
+      border-radius: 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 0 0 1px rgba(255,255,255,0.6);
+      overflow: hidden;
+      padding: 40px 30px;
+    }
+
+    /* Header Premium */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .header h1 {
+      font-size: 3em;
+      font-weight: 800;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.2em;
+      color: #475569;
+      font-weight: 500;
+    }
+    .header .badge {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      margin-top: 15px;
+      font-size: 1em;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+    }
+
+    /* Navigasi */
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 50px;
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+      padding: 15px 20px;
+      border-radius: 60px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .nav a {
+      text-decoration: none;
+      color: #334155;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 40px;
+      transition: all 0.3s;
+      font-size: 0.95em;
+      white-space: nowrap;
+    }
+    .nav a:hover {
+      background: #2563eb;
+      color: white;
+      box-shadow: 0 8px 20px rgba(37,99,235,0.4);
+    }
+
+    /* Section Cards */
+    .section {
+      background: white;
+      border-radius: 30px;
+      padding: 35px;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+      border: 1px solid rgba(255,255,255,0.8);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .section:hover {
+      box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    h2 {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #0f172a;
+    }
+    h2 .icon {
+      font-size: 1.2em;
+    }
+    h3 {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin: 25px 0 12px;
+      color: #1e293b;
+      border-left: 6px solid #2563eb;
+      padding-left: 16px;
+    }
+    p, li {
+      color: #334155;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 28px;
+      position: relative;
+    }
+    ul li::before {
+      content: "✦";
+      color: #2563eb;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .method-card {
+      background: linear-gradient(145deg, #ffffff, #f8fafc);
+      border-radius: 24px;
+      padding: 25px 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+      border: 1px solid #e2e8f0;
+    }
+    .method-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px rgba(37,99,235,0.1);
+      border-color: #2563eb;
+    }
+    .method-card h4 {
+      font-weight: 700;
+      color: #2563eb;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    /* Flashcard Grid */
+    .flashcard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .flashcard {
+      background: transparent;
+      height: 180px;
+      perspective: 800px;
+      cursor: pointer;
+    }
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      border-radius: 20px;
+    }
+    .flashcard.flipped .flip-inner {
+      transform: rotateY(180deg);
+    }
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: all 0.2s;
+    }
+    .front {
+      background: white;
+      color: #1e293b;
+      border: 2px solid #e2e8f0;
+      font-size: 1.1em;
+    }
+    .back {
+      background: #2563eb;
+      color: white;
+      transform: rotateY(180deg);
+      font-size: 0.95em;
+      line-height: 1.4;
+      border: 2px solid #1d4ed8;
+    }
+    .front:hover, .back:hover {
+      box-shadow: 0 12px 25px rgba(37,99,235,0.3);
+    }
+
+    /* Tips Cepat Hafal */
+    .mnemonic-box {
+      background: #f0f9ff;
+      border-left: 8px solid #2563eb;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 25px 0;
+      font-style: italic;
+    }
+
+    .quote {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #1e3a8a;
+    }
+
+    .btn-audio {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-right: 10px;
+      box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+    }
+    .btn-audio:hover {
+      background: #1d4ed8;
+      box-shadow: 0 12px 25px rgba(37,99,235,0.4);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 30px;
+      border-top: 1px solid #e2e8f0;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .footer span {
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2.2em;
+      }
+      .container {
+        padding: 20px 15px;
+      }
+      .nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+      }
+      .nav a {
+        text-align: center;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>🎤 Materi Pidato Lengkap</h1>
+      <p>Pengertian · Struktur · Metode · Cara Baik · Contoh</p>
+      <div class="badge">💡 Mudah Dihafal + Flashcard Interaktif</div>
+    </div>
+
+    <!-- Navigasi -->
+    <div class="nav">
+      <a href="#pengertian">📖 Pengertian</a>
+      <a href="#struktur">🏗️ Struktur</a>
+      <a href="#metode">🧠 Metode</a>
+      <a href="#cara">✅ Cara Berpidato</a>
+      <a href="#contoh">📢 Contoh Pidato</a>
+      <a href="#flashcard">🃏 Flashcard</a>
+      <a href="#hafal">⚡ Cepat Hafal</a>
+    </div>
+
+    <!-- 1. Pengertian Pidato -->
+    <div class="section" id="pengertian">
+      <h2><span class="icon">📖</span> Pengertian Pidato</h2>
+      <p><strong>Pidato</strong> adalah kegiatan berbicara di depan umum (public speaking) untuk menyampaikan gagasan, pemikiran, informasi, atau ajakan kepada orang banyak. Pidato yang baik memiliki tujuan yang jelas: <strong>informatif</strong> (memberi pengetahuan), <strong>persuasif</strong> (mengajak/memengaruhi), <strong>rekreatif</strong> (menghibur), atau <strong>argumentatif</strong> (meyakinkan dengan alasan).</p>
+      <p>Kunci pidato efektif: penguasaan materi, penyampaian vokal yang baik, kontak mata, dan gestur tubuh yang mendukung.</p>
+    </div>
+
+    <!-- 2. Struktur Pidato -->
+    <div class="section" id="struktur">
+      <h2><span class="icon">🏗️</span> Struktur Pidato & Isinya</h2>
+      <p>Pidato terdiri dari tiga bagian utama (singkatan <strong>PIP</strong>: Pembukaan, Isi, Penutup).</p>
+      <div class="method-grid">
+        <div class="method-card">
+          <h4>🌟 Pembukaan</h4>
+          <ul>
+            <li>Salam pembuka (Assalamualaikum, dll.)</li>
+            <li>Sapaan kepada yang dihormati</li>
+            <li>Ucapan syukur kepada Tuhan</li>
+            <li>Pengantar topik singkat</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <h4>📌 Isi</h4>
+          <ul>
+            <li>Inti gagasan atau pesan utama</li>
+            <li>Fakta, contoh, alasan, manfaat</li>
+            <li>Dibagi dalam 2–3 poin agar runtut</li>
+            <li>Gunakan bahasa lugas dan jelas</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <h4>🔚 Penutup</h4>
+          <ul>
+            <li>Kesimpulan singkat</li>
+            <li>Permohonan maaf</li>
+            <li>Ucapan terima kasih</li>
+            <li>Salam penutup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mnemonic-box">
+        <p class="quote">🧠 Ingat: <strong>P</strong>embukaan – <strong>I</strong>si – <strong>P</strong>enutup = PIP (seperti pipa yang mengalirkan pesan).</p>
+      </div>
+    </div>
+
+    <!-- 3. Metode Berpidato -->
+    <div class="section" id="metode">
+      <h2><span class="icon">🧠</span> Metode dalam Berpidato</h2>
+      <p>Empat metode utama (singkatan <strong>IM²E</strong>): Impromptu, Memoriter, Manuskrip, Ekstemporan.</p>
+      <div class="method-grid">
+        <div class="method-card">
+          <h4>⚡ Impromptu (Spontan)</h4>
+          <p>Tanpa persiapan. Kelebihan: natural. Kelemahan: kurang terstruktur.</p>
+        </div>
+        <div class="method-card">
+          <h4>🧠 Memoriter (Hafalan)</h4>
+          <p>Dihafal kata per kata. Kelebihan: lancar. Kelemahan: kaku, bisa lupa.</p>
+        </div>
+        <div class="method-card">
+          <h4>📄 Manuskrip (Naskah)</h4>
+          <p>Membaca teks lengkap. Kelebihan: akurat. Kelemahan: minim kontak mata.</p>
+        </div>
+        <div class="method-card">
+          <h4>✨ Ekstemporan (Catatan Kecil)</h4>
+          <p>Outline poin penting, dikembangkan sendiri. <strong>Metode terbaik</strong>: natural, terstruktur, fleksibel.</p>
+        </div>
+      </div>
+      <div class="mnemonic-box">
+        <p class="quote">🎵 Jembatan Keledai: <strong>Imam Memakai Manset Eksklusif</strong> (Impromptu, Memoriter, Manuskrip, Ekstemporan). Atau nyanyikan dengan nada "Balonku": "Impromptu, memoriter, manuskrip, ekstemporan..."</p>
+      </div>
+    </div>
+
+    <!-- 4. Cara Berpidato yang Baik dan Benar -->
+    <div class="section" id="cara">
+      <h2><span class="icon">✅</span> Cara Berpidato yang Baik & Benar</h2>
+      <div class="method-grid">
+        <div class="method-card">
+          <h4>📋 Sebelum Pidato</h4>
+          <ul>
+            <li>Kuasai materi dan tema</li>
+            <li>Kenali audiens</li>
+            <li>Buat outline (catatan kecil)</li>
+            <li>Latihan vokal & ekspresi</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <h4>🎯 Saat Pidato</h4>
+          <ul>
+            <li>Penampilan rapi & sopan</li>
+            <li>Percaya diri, postur tegak</li>
+            <li>Kontak mata merata</li>
+            <li>Intonasi naik-turun, volume cukup</li>
+            <li>Gestur tangan wajar</li>
+            <li>Bahasa santun & jelas</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <h4>🏁 Setelah Pidato</h4>
+          <ul>
+            <li>Tutup dengan salam</li>
+            <li>Ucapkan terima kasih</li>
+            <li>Evaluasi diri</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mnemonic-box">
+        <p class="quote">🗣️ Ingat <strong>S3G</strong>: <strong>S</strong>ebelum, <strong>S</strong>aat, <strong>S</strong>etelah, dan <strong>G</strong>estur/Intonasi/Kontak mata.</p>
+      </div>
+    </div>
+
+    <!-- 5. Contoh Membacakan Pidato Singkat -->
+    <div class="section" id="contoh">
+      <h2><span class="icon">📢</span> Contoh Pidato Singkat (Tema Bebas)</h2>
+      <p>Berikut contoh pidato singkat tentang <strong>"Pentingnya Membaca di Era Digital"</strong>. Bacakan dengan penuh penghayatan dan intonasi yang baik.</p>
+      <div style="background:#f8fafc; border-radius:20px; padding:30px; margin-top:20px; font-style:italic; border-left:6px solid #2563eb;">
+        <p><strong>Assalamualaikum warahmatullahi wabarakatuh.</strong><br>
+        Selamat pagi, salam sejahtera untuk kita semua.</p>
+        <p>Yang saya hormati Bapak/Ibu Guru, serta teman-teman yang saya banggakan. Puji syukur ke hadirat Tuhan Yang Maha Esa karena kita dapat berkumpul dalam keadaan sehat. Pada kesempatan singkat ini, saya akan menyampaikan pidato tentang <strong>"Pentingnya Membaca di Era Digital"</strong>.</p>
+        <p>Teman-teman, di tengah gempuran video pendek dan media sosial, budaya membaca semakin menurun. Padahal, membaca adalah jendela dunia. Dengan membaca, kita tidak hanya menambah pengetahuan, tetapi juga melatih fokus, memperkaya kosakata, dan mengasah daya kritis.</p>
+        <p>Tokoh besar seperti B.J. Habibie dan Bill Gates adalah pembaca ulung. Mereka membuktikan bahwa kebiasaan membaca mampu mengubah hidup. Maka, mari kita mulai dari hal kecil: sisihkan 15 menit sehari untuk membaca, bisa buku fisik, artikel, atau e-book.</p>
+        <p>Demikian pidato singkat dari saya. Semoga kita semakin gemar membaca. Mohon maaf atas segala kekurangan. Terima kasih atas perhatiannya.</p>
+        <p><strong>Wassalamualaikum warahmatullahi wabarakatuh.</strong></p>
+      </div>
+      <p style="margin-top:15px; color:#475569;">✍️ Tema bebas, bisa diganti sesuai kebutuhan. Latih terus intonasi dan kontak mata saat menyampaikan.</p>
+    </div>
+
+    <!-- 6. Flashcard Interaktif -->
+    <div class="section" id="flashcard">
+      <h2><span class="icon">🃏</span> Flashcard Materi Pidato</h2>
+      <p style="margin-bottom:20px; color:#475569;">Klik kartu untuk melihat jawaban. Total 20 kartu untuk mengingat konsep penting.</p>
+      <div class="flashcard-grid" id="flashcardContainer"></div>
+    </div>
+
+    <!-- 7. Tips Cepat Hafal -->
+    <div class="section" id="hafal">
+      <h2><span class="icon">⚡</span> Cara Cepat Hafal Materi Pidato</h2>
+      <div class="method-grid">
+        <div class="method-card">
+          <h4>🔤 Akronim</h4>
+          <p>Gunakan singkatan: <strong>PIP</strong> (struktur), <strong>IM²E</strong> (metode), <strong>S3G</strong> (cara).</p>
+        </div>
+        <div class="method-card">
+          <h4>🧩 Jembatan Keledai</h4>
+          <p>Kalimat absurd: <strong>"Imam Memakai Manset Eksklusif"</strong> untuk metode. Bayangkan visualnya.</p>
+        </div>
+        <div class="method-card">
+          <h4>🎵 Lagu & Irama</h4>
+          <p>Nyanyikan daftar metode dengan nada "Balonku Ada Lima": <em>Impromptu, memoriter, manuskrip, ekstemporan...</em></p>
+        </div>
+        <div class="method-card">
+          <h4>🏰 Istana Memori</h4>
+          <p>Tempatkan setiap poin di ruangan rumahmu. Misal: pintu depan = pengertian, ruang tamu = struktur (3 sofa), dapur = 4 metode, kamar mandi = cara berpidato (berkaca).</p>
+        </div>
+        <div class="method-card">
+          <h4>📖 Cerita Rangkum</h4>
+          <p>Buat narasi: <em>Seorang pembuka acara (pembukaan) menyampaikan isi penting (isi) lalu menutup dengan kesimpulan (penutup). Ia gunakan metode catatan kecil (ekstemporan) agar tetap natural.</em></p>
+        </div>
+        <div class="method-card">
+          <h4>🎙️ Rekam & Dengar</h4>
+          <p>Rekam suaramu membaca materi, dengarkan berulang sambil santai atau sebelum tidur.</p>
+        </div>
+      </div>
+      <div class="mnemonic-box">
+        <p class="quote">🧠 <strong>Tips Utama:</strong> Gabungkan minimal 2 metode (misal akronim + lagu) agar lebih melekat. Otak lebih mudah mengingat sesuatu yang lucu, aneh, atau berirama!</p>
+      </div>
+    </div>
+
+    <!-- Footer dengan Credit -->
+    <div class="footer">
+      <p>✨ Materi Pidato Premium — Dibuat dengan ❤️ oleh <span>Fauzan</span> ✨</p>
+      <p style="font-size:0.9em; margin-top:5px;">Semoga sukses ujian lisan! 🚀</p>
+    </div>
+  </div>
+
+  <script>
+    // Data Flashcard (20 kartu)
+    const cards = [
+      { q: "Apa pengertian pidato?", a: "Kegiatan berbicara di depan umum untuk menyampaikan gagasan, informasi, atau ajakan." },
+      { q: "Sebutkan 3 struktur utama pidato", a: "Pembukaan, Isi, Penutup (PIP)." },
+      { q: "Apa isi bagian pembukaan?", a: "Salam, sapaan, syukur, dan pengantar topik." },
+      { q: "Apa fungsi bagian isi?", a: "Menyampaikan inti gagasan: fakta, alasan, contoh, atau ajakan." },
+      { q: "Apa saja yang ada di penutup?", a: "Kesimpulan, maaf, terima kasih, salam penutup." },
+      { q: "Apa itu metode impromptu?", a: "Pidato spontan tanpa persiapan." },
+      { q: "Kelebihan memoriter?", a: "Lancar karena dihafal, tapi kaku dan mudah lupa." },
+      { q: "Kapan manuskrip digunakan?", a: "Acara formal kenegaraan, presiden/pejabat." },
+      { q: "Mengapa ekstemporan terbaik?", a: "Natural, terstruktur, fleksibel, kontak mata tetap terjaga." },
+      { q: "Bagaimana intonasi yang baik?", a: "Naik-turun, tidak monoton, volume cukup, kecepatan sedang." },
+      { q: "Apa pentingnya kontak mata?", a: "Membangun koneksi, menunjukkan percaya diri, pesan tersampaikan." },
+      { q: "Contoh gestur yang baik?", a: "Gerakan tangan wajar, mengangguk, tidak berlebihan." },
+      { q: "Tujuan pidato persuasif?", a: "Mengajak atau memengaruhi pendengar." },
+      { q: "Apa itu audiens?", a: "Orang yang mendengarkan pidato; pendengar." },
+      { q: "Mengapa harus menguasai materi?", a: "Agar lancar, meyakinkan, bisa jawab pertanyaan." },
+      { q: "Apa yang dilakukan setelah pidato?", a: "Salam penutup, terima kasih, evaluasi diri." },
+      { q: "Salam pembuka yang umum?", a: "Assalamualaikum Wr. Wb., Selamat pagi, Salam sejahtera." },
+      { q: "Beda informatif vs persuasif?", a: "Informatif: memberi pengetahuan; Persuasif: mengajak." },
+      { q: "Apa itu outline dalam ekstemporan?", a: "Catatan kecil berisi poin penting, bukan naskah lengkap." },
+      { q: "Apa akronim untuk metode?", a: "IM²E: Impromptu, Memoriter, Manuskrip, Ekstemporan." }
+    ];
+
+    const container = document.getElementById('flashcardContainer');
+    cards.forEach(card => {
+      const cardDiv = document.createElement('div');
+      cardDiv.className = 'flashcard';
+      cardDiv.innerHTML = `
+        <div class="flip-inner">
+          <div class="front">${card.q}</div>
+          <div class="back">${card.a}</div>
+        </div>
+      `;
+      cardDiv.addEventListener('click', () => {
+        cardDiv.classList.toggle('flipped');
+      });
+      container.appendChild(cardDiv);
+    });
+
+    // Fitur tambahan: tombol audio? Tidak diperlukan, tapi kita bisa tambahkan tombol reset flashcard.
+    // Untuk kemudahan, tidak perlu.
+  </script>
+</body>
+</html>
